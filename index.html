@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vastgoed Haarlemmermeer</title>
+</head>
+<body>
+<video id="loop-video" autoplay loop style="width: 100%;">
+    <source src="./Vastgoed-Haarlemmermeer-bezoekt.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<script>
+  const video = document.getElementById("loop-video");
+  video.addEventListener('ended', function() {
+    video.currentTime = 0;
+    video.play();
+  }, false);
+</script>
+</body>
+</html>
