@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welkom op Schiphol</title>
+</head>
+<body>
+<video autoplay muted id="loop-video" autoplay loop style="width: 100vw; height: 100vh">
+    <source src="./Opening-Welkom-op-Schiphol.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<script>
+  const video = document.getElementById("loop-video");
+  video.autoplay = true;
+  video.addEventListener('ended', function() {
+    video.currentTime = 0;
+    video.play();
+  }, false);
+</script>
+</body>
+</html>
