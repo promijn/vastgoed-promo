@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welkom op Schiphol</title>
+    <title>Welkom op Schiphol 2024</title>
 </head>
 <body>
-<h4><a href="./progranma.html" target="_blank">Programma</a></h4>
-<h4><a href="./arthur-van-dijk-slide.html" target="_blank">Slide Arthur van Dijk</a></h4>
-<h4><a href="./marianne-schuurmans-slide.html" target="_blank">Slide Marianne Schuurmans-Wijdeven</a></h4>
-<h4><a href="./marianne-schuurmans-film.html" target="_blank">Film Marianne Schuurmans-Wijdeven</a></h4>
-<h4><a href="./pieter-van-oord-slide.html" target="_blank">Slide Pieter van Oord</a></h4>
-<h4><a href="./pieter-dijckmeester-slide.html" target="_blank">Slide Pieter Dijckmeester</a></h4>
-<h4><a href="./logos.html" target="_blank">Logos</a></h4>
+<video muted id="loop-video" autoplay loop style="width: 100vw; height: 100vh">
+    <source src="./assets/beukenhorst-bruist.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<script>
+  const video = document.getElementById("loop-video");
+  video.autoplay = true;
+  video.addEventListener('ended', function() {
+    video.currentTime = 0;
+    video.play();
+  }, false);
+</script>
 </body>
 </html>
